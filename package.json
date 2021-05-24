@@ -1,0 +1,23 @@
+{
+  "name": "simple-node-validator",
+  "version": "1.0.0",
+  "description": "Very simple NodeJS validator",
+  "main": "simples-validator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jandersonclemente/simple-validator.git"
+  },
+  "keywords": [
+    "validator",
+    "node"
+  ],
+  "author": "Janderson Clemente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jandersonclemente/simple-validator/issues"
+  },
+  "homepage": "https://github.com/jandersonclemente/simple-validator#readme"
+}
