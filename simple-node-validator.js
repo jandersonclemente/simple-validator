@@ -16,3 +16,8 @@ exports.size = (value = null, min = 1, max = 999) => {
     return value 
 }
 
+exports.brzip = (value = null) => {
+    const re = /^\d{5}-\d{3}$/
+    const result = re.test(value) ? value : false
+    return result
+}

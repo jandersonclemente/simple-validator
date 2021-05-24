@@ -1,6 +1,6 @@
 {
   "name": "simple-node-validator",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Very simple NodeJS validator",
   "main": "simple-node-validator.js",
   "scripts": {
