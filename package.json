@@ -1,8 +1,8 @@
 {
   "name": "simple-node-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Very simple NodeJS validator",
-  "main": "simples-validator.js",
+  "main": "simple-node-validator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
