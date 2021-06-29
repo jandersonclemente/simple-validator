@@ -176,5 +176,5 @@ exports.dbDate = (date = null, symbolFrom = '/', symbolTo = '-') => {
 
     let dbDate    = `${dateArray[2]}${symbolTo}${dateArray[1]}${symbolTo}${dateArray[0]}`
 
-    return date
+    return dbDate
 }
