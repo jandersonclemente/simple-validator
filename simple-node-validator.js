@@ -94,6 +94,10 @@ exports.cpf = (cpf = null) => {
 }
 
 exports.cnpj = (cnpj = null) => {
+    if (typeof cpf !== "string" || !cnpj){
+        return false
+    }
+
     cnpj = cnpj.replace(/[^\d]+/g,'');
  
     if(cnpj == ''){ 
@@ -156,4 +160,21 @@ exports.cnpj = (cnpj = null) => {
     }
            
     return true
+}
+
+exports.dbDate = (date = null, symbolFrom = '/', symbolTo = '-') => {
+    if(!date || typeof date !== 'string'){
+        return false
+    }
+
+    let dateArray = date.split(symbolFrom)
+
+    const dateArrayLength = dateArray.length
+    if(dateArrayLength != 3){
+        return false
+    }
+
+    let dbDate    = `${dateArray[2]}${symbolTo}${dateArray[1]}${symbolTo}${dateArray[0]}`
+
+    return date
 }
