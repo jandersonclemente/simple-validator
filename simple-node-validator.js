@@ -184,3 +184,11 @@ exports.uuidv4 = () => {
         (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
     );
 }
+
+exports.dbDateNow = () => {
+    const baseDate = new Date();
+    const month    = baseDate.getMonth() + 1 < 10 ? '0' + (baseDate.getMonth() + 1) : baseDate.getMonth() + 1 
+    const date  = `${baseDate.getFullYear()}-${month}-${baseDate.getDate()}T${baseDate.getHours()}:${baseDate.getMinutes()}:00`
+
+    return date
+}
