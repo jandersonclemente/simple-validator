@@ -94,7 +94,7 @@ exports.cpf = (cpf = null) => {
 }
 
 exports.cnpj = (cnpj = null) => {
-    if (typeof cpf !== "string" || !cnpj){
+    if (typeof cnpj !== "string" || !cnpj){
         return false
     }
 
