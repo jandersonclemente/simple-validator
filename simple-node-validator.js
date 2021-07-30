@@ -27,7 +27,7 @@ exports.brzip = (value = null) => {
 exports.undot = (value = null) => {
     if(!value) return false
 
-    value = value.replace(/[\s.-]*/igm, '')
+    value = value.replace(/[\s.-]*/igm, '').replace(/\//g,'')
 
     return value
 }
